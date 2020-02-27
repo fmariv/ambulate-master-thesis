@@ -1,4 +1,4 @@
-# Semper ambulant
+# Ambulate
 
 This project represents most of my Master's Thesis, which was developed for and in collaboration with the Research Group on Mobility, Transportation and Territory (GEMOTT) of the Autonomous University of Barcelona. 
 
