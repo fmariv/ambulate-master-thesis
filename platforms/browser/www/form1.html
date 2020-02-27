@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title>Form 1</title>
+        <!-- JQuery Mobile -->
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css"></link>
+        <!-- Project CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- NativeDroid2 CSS -->
+        <link rel="stylesheet" href="bower_components/nativeDroid2/css/nativedroid2.css" />
+    </head>
+	<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 class="nd-title">Com et fa sentir aquest lloc?</h1>
+            <a class="ui-btn ui-btn-left"><i class="zmdi zmdi-help"></i></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div data-demo-html="true">
+                <form action="" method="POST">
+                    <fieldset data-role="controlgroup">
+                        <input type="radio" name="quest1" id="quest1-1" value="1" checked="checked"/>
+                        <label id="options" for="quest1-1">Molt bé</label>
+                        <input type="radio" name="quest1" id="quest1-2" value="2"/>
+                        <label id="options" for="quest1-2">Bé</label>
+                        <input type="radio" name="quest1" id="quest1-3" value="3"/>
+                        <label id="options" for="quest1-3">Indiferent</label>
+                        <input type="radio" name="quest1" id="quest1-4" value="4"/>
+                        <label id="options" for="quest1-4">Malament</label>
+                        <input type="radio" name="quest1" id="quest1-5" value="5"/>
+                        <label id="options" for="quest1-5">Molt malament</label>
+                    </fieldset>
+                </form>
+            </div>
+            <hr>
+        </div>
+        
+        <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="javascript:changePageToIndex()" class="ui-btn ui-btn-raised clr-primary" data-transition="slideup" data-rel="back"><i class="zmdi zmdi-long-arrow-return zmd-2x"></i></a></li>
+                        <li><a href="javascript:save_form()" class="ui-btn ui-btn-raised clr-primary"><i class="zmdi zmdi-mail-send zmd-2x"></i></a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+        <!-- JQuery -->
+        <script src="jquery/jquery-2.2.4.js"></script>
+        <!-- JQuery Mobile -->
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Project Js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <!-- NativeDroid2 Js -->
+        <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/nd2settings.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+    </body>
+</html>

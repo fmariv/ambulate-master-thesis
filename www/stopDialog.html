@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title>Diálogo de parada</title>
+        <!-- JQuery Mobile -->
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css"></link>
+        <!-- Project CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- NativeDroid2 CSS -->
+        <link rel="stylesheet" href="bower_components/nativeDroid2/css/nativedroid2.css" />
+        <style>
+            .ui-btn{
+                margin-top:15px;
+                }
+        </style>
+    </head>
+	<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 class="nd-title">¿Te has detenido?</h1>
+            <a class="ui-btn ui-btn-left"><i class="zmdi zmdi-alert-circle"></i></a>
+        </div>
+                
+        <div data-role="content">
+            <p>Parece ser que te has detenido. Quieres responder un formulario, acabar la ruta o continuar caminando?</p>
+            <a href="javascript:location.href='form1.html'" class="ui-btn ui-icon-plus ui-btn-icon-left ui-btn-primary ui-btn-raised" data-transition="slidefade">Responder formulario</a>
+            <a href="javascript:sendRoute()" class="ui-btn ui-icon-navigation ui-btn-icon-left ui-btn-primary ui-btn-raised">Acabar ruta</a>
+            <a href="javascript:changePageToIndex()" data-transition="slideup" data-rel="back" class="ui-btn ui-icon-refresh ui-btn-icon-left ui-btn-raised ui-btn-primary">Continuar caminando</a>
+
+        </div>
+    </div>
+        <!-- JQuery -->
+        <script src="jquery/jquery-2.2.4.js"></script>
+        <!-- JQuery Mobile -->
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Project Js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- NativeDroid2 Js -->
+        <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/nd2settings.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+    </body>
+</html>

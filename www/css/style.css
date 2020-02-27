@@ -1,0 +1,60 @@
+#map{
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	}
+	
+.img-container{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 15px;
+	padding-top: 30px;
+}
+
+.form-container{
+	display:inline;
+	text-align:center;
+}
+
+#uab-logo{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#gen-label{
+	font-weight: bold;
+}
+
+.center-text{
+	text-align:center;
+}
+
+#login-links{
+	display:block;
+	padding:5px;
+}
+
+.ui-btn{
+	margin-top:10px;
+}
+
+.menu-btn{
+	margin-top:10px;
+}
+
+#error-text, #error-text-signin{
+	color: 	#DC143C;
+	font-size:14px;
+}
+
+.justify-text{
+	text-align : justify;
+}
+
+#bold-text{
+	font-weight:bold;
+}
+
+.app-color-text {
+	color: #009688;
+}

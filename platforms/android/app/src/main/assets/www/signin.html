@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title>Sign in</title>
+        <!-- JQuery Mobile -->
+        <link rel="stylesheet" href="./jquery/jquery.mobile-1.4.5.css"></link>
+        <!-- Project CSS -->
+        <link rel="stylesheet" href="./css/style.css"></link>
+        <!-- NativeDroid2 CSS -->
+        <link rel="stylesheet" href="./bower_components/nativeDroid2/css/nativedroid2.css"></link>
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></link> -->
+    </head>
+    <body>
+        <div data-role="main" class="ui-content">
+            <form method="post">
+                <div class="img-container">
+                    <img src="img/logo_gemott.png" alt="No es pot carregar la imatge" height="90" width="300">
+                </div>
+  
+                <div>
+                    <h2 class="app-color-text">Registre</h2>
+                    <hr>
+                    <label for="mail"><b>Correu electrònic</b></label>
+                    <input type="text" placeholder="Introduir correu electrònic..." id="mail" name="mail" required>
+                    <label for="psw"><b>Contrasenya</b></label>
+                    <input type="password" placeholder="Introduir contrasenya..." id="psw" name="psw" required>
+                    <label for="age"><b>Edat</b></label>
+                    <input type="number" placeholder="Introduir edat..." id="age" name="age">
+                    <div class="form-container">
+                        <label id="gen-label">Génere</label>
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <input type="radio" name="gen" id="gen-H" value="H"/>
+                            <label id="options" for="gen-H">Home</label>
+                            <input type="radio" name="gen" id="gen-D" value="D"/>
+                            <label id="options" for="gen-D">Dona</label>
+                        </fieldset>
+                    </div>
+                    <div class="center-text" id="error-text"></div>
+                    <div class="center-text">
+                        <p>Al registrar-te, acceptes els <a href="privacity.html">termes de privacitat</a></p>
+                        <p>Ja estàs <a href="login.html" data-transition="fade">registrat?</a></p>
+                    </div>
+                </div>
+
+                <a href="javascript:registry()" class="ui-btn ui-btn-raised clr-primary">Registrar-me</a>
+
+                <div class="img-container" id="uab-logo">
+                    <img src="img/UAB.jpg" alt="No es pot carregar la imatge" height="150" witdh="150">
+                </div>
+            </form>
+        </div>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="jquery/jquery-2.2.4.js"></script>
+        <!-- Project Js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- JQuery Mobile -->
+        <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <!-- NativeDroid2 Js -->
+        <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/nd2settings.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+    </body>
+</html> 

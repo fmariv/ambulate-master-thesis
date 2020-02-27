@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <title>Menú principal</title>
+        <!-- JQuery Mobile -->
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css"></link>
+        <!-- Project CSS -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- NativeDroid2 CSS -->
+        <link rel="stylesheet" href="bower_components/nativeDroid2/css/nativedroid2.css" />
+        <style>
+            .menu-btn{
+	            margin-top:10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div data-role="page">
+
+            <nd2-include data-src="panel.left.html"></nd2-include>
+            
+            <div data-role="header" data-position="fixed" class="wow fadeIn">
+                <h1>Menú principal</h1>
+                <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                    <a href="javascript:location.href='index.html'" class="ui-btn ui-btn-icon-block ui-btn-raised clr-primary menu-btn"><i class="zmdi zmdi-navigation zmd-2x"></i> Iniciar registro</a>
+                    <a href="javascript:location.href='map.html'" class="ui-btn ui-btn-icon-block ui-btn-raised clr-primary menu-btn"><i class="zmdi zmdi-pin-drop zmd-2x"></i>Ver mapa</a>
+                    <a href="javascript:location.href='listview.html'" class="ui-btn ui-icon-comment ui-btn-icon-left ui-btn-raised clr-primary menu-btn">Estadísticas</a>
+                    <div class="img-container">
+                        <img src="img/logo_gemott.png" alt="No es pot carregar la imatge" height="90" width="300">
+                    </div>
+            </div>
+        </div>
+        <!-- JQuery -->
+        <script src="jquery/jquery-2.2.4.js"></script>
+        <!-- JQuery Mobile -->
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Project js -->
+        <script src="js/app.js"></script>
+        <!-- NativeDroid2 Js -->
+        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+    </body>
+</html>
