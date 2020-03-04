@@ -8,5 +8,5 @@ Briefly, *Ambulate* is a mobile web app that's capable of collecting real-time d
 
 ----
 
-Writen and developed for and in collaboration with the Research Group on Mobility, Transportation and Territory (GEMOTT) of the Autonomous University of Barcelona, Barcelona, Spain. 
+Written and developed for and in collaboration with the Research Group on Mobility, Transportation and Territory (GEMOTT) of the Autonomous University of Barcelona, Barcelona, Spain. 
 
