@@ -8,7 +8,7 @@
     <author email="gemott@uab.cat" href="#">
         Fran Martín Rivas
     </author>
-    <content src="login.html" />
+    <content src="" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />

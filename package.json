@@ -4,7 +4,8 @@
   "description": "SmartPhone App for collecting real-time data in terms of how the inhabitants ot the city of Barcelona use public space and the feelings they have on it",
   "main": "app.js",
   "dependencies": {
-    "cordova-android": "^8.0.0"
+    "cordova-android": "^8.1.0",
+    "live-server": "^1.2.1"
   },
   "devDependencies": {},
   "scripts": {

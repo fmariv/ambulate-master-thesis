@@ -3,54 +3,35 @@
     <head>
         <meta charset="utf-8"></meta>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
-        <title>Mapa</title>
-        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-        <!-- Project CSS -->
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- CSS Leaflet -->
-        <link rel="stylesheet" href="Leaflet/leaflet.css" />
-        <!-- ### Plugins ### -->
-        <!-- Locate -->
-        <link rel="stylesheet" href="Leaflet_plugins/Locate/L.Control.Locate.css" />
-        <!-- Interest multypolygon GEOJSON -->
-        <script src="data/Poligons.geojson"></script>
-        <!-- Jquery mobile CSS -->
-        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css"></link>
-        <!-- NativeDroid2 CSS -->
-        <link rel="stylesheet" href="bower_components/nativeDroid2/css/nativedroid2.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../common/map.css" />
+        <link rel="stylesheet" href="../vendors/css/jquery/jquery.mobile-1.4.5.css"></link>
+        <link rel="stylesheet" href="../common/nativeDroid2/css/nativedroid2.css" />
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
         <div id ="map"></div>
-
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="javascript:returnToMenu()" class="ui-btn ui-btn-raised clr-primary"><i class="zmdi zmdi-long-arrow-return zmd-2x"></i></a></li>
-                    <li><a href="javascript:sendRoute()" class="ui-btn ui-btn-raised clr-primary"><i class="zmdi zmdi-mail-send zmd-2x"></i></a></li>
+                    <li><a href="" class="ui-btn ui-btn-raised clr-primary" data-transition="pop" data-rel="back"><i class="zmdi zmdi-long-arrow-return zmd-2x"></i></a></li>
                 </ul>
             </div>
         </div>
-        
-        <!-- JQuery -->
-        <script src="jquery/jquery-2.2.4.js"></script>
-        <!-- JQuery Mobile -->
-        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
-        <!-- JS Leaflet -->
-        <script src="Leaflet/leaflet.js"></script>
-        <!-- Locate -->
-        <script type="text/javascript" src="Leaflet_plugins/Locate/L.Control.Locate.js"></script>
-        <!-- Turf.js -->
+        <script src="../vendors/js/jquery/jquery-2.2.4.js"></script>
+        <script src="../vendors/js/jquery/jquery.mobile-1.4.5.min.js"></script>
+        <script src="../data/areas_of_interest.geojson"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+        <script type="text/javascript" src="../js/app.js"></script>
         <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
-        <!-- Project Js -->
-        <script type="text/javascript" src="js/app.js"></script>
-        <!-- NativeDroid2 Js -->
-        <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
-        <script type="text/javascript" src="bower_components/nativeDroid2/nd2settings.js"></script>
-        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+        <script type="text/javascript" src="../common/map.js"></script>
+        <script type="text/javascript" src="../common//Waves/dist/waves.js"></script>
+        <script type="text/javascript" src="../common/nativeDroid2/nd2settings.js"></script>
+        <script type="text/javascript" src="../common/nativeDroid2/js/nativedroid2.js"></script>
         <script>
             $(document).ready(
-                init()
+                initMap()
             );
         </script>
     </body>

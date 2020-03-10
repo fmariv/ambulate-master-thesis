@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <!-- JQuery Mobile -->
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css"></link>
+        <!-- Project CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- NativeDroid2 CSS -->
+        <link rel="stylesheet" href="bower_components/nativeDroid2/css/nativedroid2.css" />
+    </head>
+	<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 class="nd-title">¿Por qué?</h1>
+            <a class="ui-btn ui-btn-left"><i class="zmdi zmdi-help"></i></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div data-demo-html="true">
+                <form id="form2">
+                    <fieldset data-role="controlgroup">
+                        <input type="checkbox" name="quest2[]" id="quest2-1" value="1"/>
+                        <label id="opciones4" for="quest2-1">Árboles y plantas</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-2" value="2"/>
+                        <label id="opciones4" for="quest2-2">Comercios</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-3" value="3"/>
+                        <label id="opciones4" for="quest2-3" >Bancos / mobiliario</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-4" value="4"/>
+                        <label id="opciones4" for="quest2-4">Estado de la calzada</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-5" value="5"/>
+                        <label id="opciones4" for="quest2-5">Gente</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-6" value="6"/>
+                        <label id="opciones4" for="quest2-6">Tránsito</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-7" value="7"/>
+                        <label id="opciones4" for="quest2-7">Ruido</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-8" value="8"/>
+                        <label id="opciones4" for="quest2-8">Olor</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-9" value="9"/>
+                        <label id="opciones4" for="quest2-9">Iluminación</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-10" value="10"/>
+                        <label id="opciones4" for="quest2-10">Limpieza</label>
+                        <input type="checkbox" name="quest2[]" id="quest2-11" value="11"/>
+                        <label id="opciones4" for="quest2-11">Otros</label>
+                    </fieldset>
+                </form>
+            </div>
+            <hr>
+            <div data-role="footer" data-position="fixed">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="javascript:save_quest_2()" class="ui-btn ui-btn-raised clr-primary"><i class="zmdi zmdi-mail-send zmd-2x"></i></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+        <!-- JQuery -->
+        <script src="jquery/jquery-2.2.4.js"></script>
+        <!-- JQuery Mobile -->
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Project Js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <!-- NativeDroid2 Js -->
+        <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/nd2settings.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <!-- JQuery Mobile -->
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.css"></link>
+        <!-- Project CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- NativeDroid2 CSS -->
+        <link rel="stylesheet" href="bower_components/nativeDroid2/css/nativedroid2.css" />
+        <style>
+            .ui-btn{
+                margin-top:15px;
+                }
+        </style>
+    </head>
+	<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 class="nd-title">Ayuda</h1>
+            <a class="ui-btn ui-btn-left"><i class="zmdi zmdi-info"></i></a>
+        </div>
+        <div data-role="content" class="justify-text">
+            <h4 class="center-text app-color-text"> Com fer servir l'aplicació </h4>
+            <p id="bold-text"> A continuació es dóna una petita guia de com fer servir l'aplicació: </p>
+            <ul>
+                <li>
+                    Per a iniciar un registre de ruta, prem el botó <span class="app-color-text">INICIAR REGISTRE</span>. Apareixerà un mapa de la ciutat de Barcelona que podràs centrar
+                    a la teva posició. Aniràs veient la ruta que camines i els formularis que respons! Si vols acabar el registre, simplement prem el botó que hi ha a baix a la dreta <i class="zmdi zmdi-mail-send"></i>. Si 
+                    per contrari vols tornar, simplement prem el botó que hi ha a baix a l'esquerre <i class="zmdi zmdi-long-arrow-return"></i>.
+                </li>
+                    <ul>
+                        <li>
+                            Quan s'inicia un registre de ruta, l'aplicació detectarà automàticament quan t'aturis durant un temps determinat. En aquest moment podràs respondre
+                            un formulari, acabar el registre de ruta o simplement continuar caminant.
+                        </li>
+                    </ul>
+                <li>
+                    Per a veure totes les teves rutes caminades i la posició dels formularis que has respòs sobre el mapa de Barcelona, prem el botó <span class="app-color-text">VEURE MAPA</span>.
+                </li>
+                <li>
+                    Per a veure les teves estadístiques, en termes de rutes registrades, formularis resposos i la distància total que has recorregut, prem el botó <span class="app-color-text">VEURE ESTADÍSTIQUES</span>.
+                </li>
+            </ul>
+        </div>
+		<div class="img-container">
+            <img src="img/logo_gemott.png" alt="No es pot carregar la imatge" height="60" width="200">
+        </div>
+		<div class="img-container" id="uab-logo">
+            <img src="img/UAB.jpg" alt="No es pot carrerar la imatge" height="120" witdh="120">
+        </div>
+		<div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-rel="back" data-transition="slidedown" class="ui-btn ui-btn-raised clr-primary"><i class="zmdi zmdi-long-arrow-return zmd-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!-- JQuery -->
+        <script src="jquery/jquery-2.2.4.js"></script>
+        <!-- JQuery Mobile -->
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Project Js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <!-- NativeDroid2 Js -->
+        <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/nd2settings.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"></meta>
+        <!-- JQuery Mobile -->
+        <link rel="stylesheet" href="./jquery/jquery.mobile-1.4.5.css"></link>
+        <!-- Project CSS -->
+        <link rel="stylesheet" href="./css/style.css"></link>
+        <!-- NativeDroid2 CSS -->
+        <link rel="stylesheet" href="./bower_components/nativeDroid2/css/nativedroid2.css"></link>
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></link> -->
+    </head>
+    <body>
+        <div data-role="main" class="ui-content">
+            <form method="post">
+                <div>
+                    <h2 class="app-color-text">Registro</h2>
+                    <hr>
+                    <label for="mail"><b>Correo electrónico</b></label>
+                    <input type="text" placeholder="Introducir correo electrónico..." id="mail-sign" name="mail" required>
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Introducir contraseña..." id="psw-sign" name="psw" required>
+                    <label for="age"><b>Edad</b></label>
+                    <input type="number" placeholder="Introducir edad..." id="age" name="age">
+                    <div class="center-text" id="error-text-signin"></div>
+                    <div class="center-text">
+                        <p>¿Ya estás <a href="login.html" data-transition="fade">registrado?</a></p>
+                    </div>
+                </div>
+                <a href="javascript:registry()" class="ui-btn ui-btn-raised clr-primary">Registrarme</a>
+            </form>
+        </div>
+        <!-- JQuery -->
+        <script type="text/javascript" src="jquery/jquery-2.2.4.js"></script>
+        <!-- Project Js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- JQuery Mobile -->
+        <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <!-- NativeDroid2 Js -->
+        <script type="text/javascript" src="bower_components/Waves/dist/waves.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/nd2settings.js"></script>
+        <script type="text/javascript" src="bower_components/nativeDroid2/js/nativedroid2.js"></script>
+    </body>
+</html> 
