@@ -1,4 +1,4 @@
-# Ambulate
+# Ambulate master thesis
 
 This project represents most of my Master's final thesis for the Geoinformation & Geoapps development master at the Autonomous University of Barcelona.
 
